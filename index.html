@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인터렉티브 개발자 포트폴리오</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-mouse-pointer"></i> Interactive Developer</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#interactive-ui" class="nav-link">인터렉티브 UI</a>
+                <a href="#visual-effects" class="nav-link">시각 효과</a>
+                <a href="#cross-platform" class="nav-link">크로스 플랫폼</a>
+                <a href="#gameplay-demo" class="nav-link">게임플레이 데모</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 컨테이너 -->
+    <div class="main-container">
+        <div class="vertical-scroll">
+            <!-- 홈 섹션 -->
+            <section class="section" id="home">
+                <div class="section-content">
+                    <div class="hero-content">
+                        <h1 class="hero-title">인터렉티브</h1>
+                        <h2 class="hero-subtitle">개발자</h2>
+                        <p class="hero-description">
+                            사용자 경험과 인터렉션에 특화된 개발자로,<br>
+                            직관적이고 몰입감 있는 디지털 경험을 제공합니다.
+                        </p>
+                        <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>4+</h3>
+                            <p>인터렉티브 프로젝트</p>
+                        </div>
+                            <div class="stat-item">
+                                <h3>100%</h3>
+                                <p>사용자 만족도</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>Unity</h3>
+                                <p>크로스 플랫폼</p>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="scrollToSection('interactive-ui')">
+                                <i class="fas fa-play"></i> 프로젝트 보기
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="game-icons">
+                            <div class="game-icon" data-game="interactive-ui">
+                                <i class="fas fa-mouse-pointer"></i>
+                                <span>인터렉티브 UI</span>
+                            </div>
+                            <div class="game-icon" data-game="visual-effects">
+                                <i class="fas fa-eye"></i>
+                                <span>시각 효과</span>
+                            </div>
+                            <div class="game-icon" data-game="cross-platform">
+                                <i class="fas fa-globe"></i>
+                                <span>크로스 플랫폼</span>
+                            </div>
+                            <div class="game-icon" data-game="gameplay-demo">
+                                <i class="fas fa-gamepad"></i>
+                                <span>게임플레이 데모</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 인터렉티브 UI/UX 섹션 -->
+            <section class="section game-section" id="interactive-ui">
+                <div class="section-content">
+                    <div class="game-header">
+                        <div class="game-info">
+                            <h1 class="game-title">인터렉티브 UI/UX</h1>
+                            <div class="game-meta">
+                                <span class="game-genre">사용자 경험</span>
+                                <span class="game-platform">Web/Mobile</span>
+                            </div>
+                            <div class="game-tech">
+                                <span class="tech-tag">Unity UI</span>
+                                <span class="tech-tag">UX Design</span>
+                                <span class="tech-tag">Animation</span>
+                            </div>
+                        </div>
+                        <div class="game-video">
+                            <div class="video-container">
+                                <div class="image-gallery">
+                                    <div class="image-item" onclick="openImageModal('mobile_page.gif', 'UI 최적화 결과 - 모바일')">
+                                        <img src="mobile_page.gif" alt="UI 최적화 결과 - 모바일" class="game-image">
+                                        <div class="image-label">모바일 화면</div>
+                                    </div>
+                                    <div class="image-item" onclick="openImageModal('pc_page.png', 'UI 최적화 결과 - PC')">
+                                        <img src="pc_page.png" alt="UI 최적화 결과 - PC" class="game-image">
+                                        <div class="image-label">PC 화면</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-details">
+                        <div class="detail-section">
+                            <h3><i class="fas fa-user-check"></i> 사용자 경험 분석</h3>
+                            <p>사용자 행동 패턴 분석을 통해 UI 인터렉션의 문제점을 파악했습니다. 기존 UI가 직관적이지 않고 사용자 피드백이 부족한 것을 확인했습니다.</p>
+                        </div>
+                        <div class="detail-section">
+                            <h3><i class="fas fa-magic"></i> 인터렉티브 솔루션</h3>
+                            <p>직관적인 터치 인터페이스와 즉각적인 시각적 피드백을 제공하는 UI 시스템을 구현했습니다. 애니메이션과 하이드로피드백을 통해 사용자 경험을 크게 향상시켰습니다.</p>
+                        </div>
+                        <div class="detail-section">
+                            <h3><i class="fas fa-chart-line"></i> 성과</h3>
+                            <p><strong>결과:</strong> 직관적인 터치 인터페이스와 즉각적인 시각적 피드백으로 사용자 경험을 크게 향상시켰습니다. 인터페이스 사용성 개선으로 사용자 이탈률이 감소했습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 인터렉티브 시각 효과 섹션 -->
+            <section class="section game-section" id="visual-effects">
+                <div class="section-content">
+                    <div class="game-header">
+                        <div class="game-info">
+                            <h1 class="game-title">인터렉티브 시각 효과</h1>
+                            <div class="game-meta">
+                                <span class="game-genre">실시간 렌더링</span>
+                                <span class="game-platform">WebGL</span>
+                            </div>
+                            <div class="game-tech">
+                                <span class="tech-tag">Shader Graph</span>
+                                <span class="tech-tag">HLSL</span>
+                                <span class="tech-tag">WebGL</span>
+                            </div>
+                        </div>
+                        <div class="game-video">
+                            <div class="video-container">
+                                <iframe 
+                                    id="bloom-video" 
+                                    src="https://www.youtube.com/embed/5xPjVHDgFDE" 
+                                    title="Bloom 셰이더 데모 영상"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                                </iframe>
+                                <div class="video-overlay" onclick="openYouTubeVideo('5xPjVHDgFDE')">
+                                    <button class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-details">
+                        <div class="detail-section">
+                            <h3><i class="fas fa-eye"></i> 프로젝트 목표</h3>
+                            <p>사용자 인터랙션에 반응하는 동적 시각 효과 시스템 구현. 사용자의 행동에 따라 실시간으로 변화하는 몰입감 있는 시각적 피드백을 제공하는 것이 목표였습니다.</p>
+                        </div>
+                        <div class="detail-section">
+                            <h3><i class="fas fa-code"></i> 기술 구현</h3>
+                            <p>Shader Graph와 HLSL을 활용하여 사용자 입력에 반응하는 커스텀 시각 효과를 구현했습니다. 실시간 파라미터 조절을 통해 인터랙티브한 시각적 경험을 제공했습니다.</p>
+                        </div>
+                        <div class="detail-section">
+                            <h3><i class="fas fa-chart-line"></i> 성과</h3>
+                            <p><strong>결과:</strong> 사용자 인터랙션에 즉각적으로 반응하는 시각적 피드백으로 몰입감 있는 경험을 제공했습니다. 인터랙티브한 시각 효과로 사용자 참여도가 크게 향상되었습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 크로스 플랫폼 인터렉션 섹션 -->
+            <section class="section game-section" id="cross-platform">
+                <div class="section-content">
+                    <div class="game-header">
+                        <div class="game-info">
+                            <h1 class="game-title">크로스 플랫폼 인터렉션</h1>
+                            <div class="game-meta">
+                                <span class="game-genre">멀티 플랫폼</span>
+                                <span class="game-platform">iOS/Android/Web</span>
+                            </div>
+                            <div class="game-tech">
+                                <span class="tech-tag">Unity</span>
+                                <span class="tech-tag">Cross Platform</span>
+                                <span class="tech-tag">Responsive Design</span>
+                            </div>
+                        </div>
+                        <div class="game-video">
+                            <div class="video-container">
+                                <iframe 
+                                    id="mobile-video" 
+                                    src="https://www.youtube.com/embed/tO8AoATArrg" 
+                                    title="모바일 빌드 최적화 영상"
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                                </iframe>
+                                <div class="video-overlay" onclick="openYouTubeVideo('tO8AoATArrg')">
+                                    <button class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-details">
+                        <div class="detail-section">
+                            <h3><i class="fas fa-globe"></i> 프로젝트 범위</h3>
+                            <p>iOS, Android, Web 플랫폼에서 일관된 사용자 경험을 제공하는 크로스 플랫폼 인터렉션 시스템 구현. 각 플랫폼의 특성에 맞는 최적화된 인터페이스를 개발했습니다.</p>
+                        </div>
+                        <div class="detail-section">
+                            <h3><i class="fas fa-mobile-alt"></i> 반응형 인터페이스</h3>
+                            <p>다양한 화면 크기와 해상도에 대응하는 반응형 UI 시스템을 구축했습니다. 터치, 마우스, 키보드 입력을 모두 지원하는 통합 인터랙션 시스템을 구현했습니다.</p>
+                        </div>
+                        <div class="detail-section">
+                            <h3><i class="fas fa-check-circle"></i> 성과</h3>
+                            <p><strong>결과:</strong> 모든 플랫폼에서 일관된 사용자 경험을 제공하여 개발 효율성을 높였습니다. 크로스 플랫폼 호환성으로 사용자 접근성이 크게 개선되었습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 인터렉티브 게임플레이 데모 섹션 -->
+            <section class="section game-section" id="gameplay-demo">
+                <div class="section-content">
+                    <div class="game-header">
+                        <div class="game-info">
+                            <h1 class="game-title">인터렉티브 게임플레이 데모</h1>
+                            <div class="game-meta">
+                                <span class="game-genre">Unity URP + Light</span>
+                                <span class="game-platform">Unity</span>
+                            </div>
+                            <div class="game-tech">
+                                <span class="tech-tag">URP</span>
+                                <span class="tech-tag">Light System</span>
+                                <span class="tech-tag">Interactive Design</span>
+                            </div>
+                        </div>
+                        <div class="game-video">
+                            <div class="video-container">
+                                <div class="image-gallery">
+                                    <div class="image-item" onclick="openImageModal('jumpingShot.gif', '점핑샷 데모 연출')">
+                                        <img src="jumpingShot.gif" alt="점핑샷 데모 연출" class="game-image">
+                                        <div class="image-label">Light 연출 데모</div>
+                                    </div>
+                                    <div class="image-item" onclick="openYouTubeVideo('1hGowvJpE3E')">
+                                        <img src="jumpingShot.gif" alt="점핑샷 데모 영상" class="game-image">
+                                        <div class="image-label">YouTube 영상</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-details">
+                        <div class="detail-section">
+                            <h3><i class="fas fa-gamepad"></i> 프로젝트 목표</h3>
+                            <p>사용자 인터랙션에 즉각적으로 반응하는 몰입감 있는 게임플레이 시스템 구현. 플레이어의 행동에 따라 실시간으로 변화하는 시각적 피드백과 인터랙티브 요소를 개발했습니다.</p>
+                        </div>
+                        <div class="detail-section">
+                            <h3><i class="fas fa-cogs"></i> 기술 구현</h3>
+                            <p>URP의 Light 시스템을 활용하여 플레이어 액션에 반응하는 동적 조명 효과를 구현했습니다. 실시간 Light Intensity 조절과 컬러 보간을 통해 강력한 시각적 피드백을 제공했습니다.</p>
+                        </div>
+                        <div class="detail-section">
+                            <h3><i class="fas fa-chart-line"></i> 성과</h3>
+                            <p><strong>결과:</strong> 플레이어 액션에 즉각적으로 반응하는 동적 조명 효과로 몰입감 있는 게임플레이를 구현했습니다. 인터랙티브한 요소로 사용자 경험이 크게 향상되었습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- 스크롤 인디케이터 -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress"></div>
+    </div>
+
+    <!-- 영상 모달 -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <video id="modalVideo" controls>
+                <source src="#" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- 이미지 모달 -->
+    <div class="image-modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeImageModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="image-info">
+                <h3 id="imageTitle"></h3>
+                <p>영상의 경우 면접 시 따로 보여드리겠습니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
